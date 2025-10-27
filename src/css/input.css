@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
 
+@theme {
+  --color-50: #fde8f2;
+  --color-100: #f8bedb;
+  --color-200: #f495c4;
+  --color-300: #ef6bad;
+  --color-400: #ec4899;
+  --color-500: #e7187f;
+  --color-600: #bd1469;
+  --color-700: #941052;
+  --color-800: #6a0b3b;
+  --color-900: #410724;
+  --color-950: #17020d;
+}
+
 @import 'tailwindcss';
