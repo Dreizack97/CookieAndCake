@@ -16,3 +16,11 @@
 }
 
 @import 'tailwindcss';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-logo {
+  font-family: 'Pacifico', cursive;
+}
