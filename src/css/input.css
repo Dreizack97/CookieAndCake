@@ -1,1 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
+
+@theme {
+  --color-cookie-50: #fde8f2;
+  --color-cookie-100: #f8bedb;
+  --color-cookie-200: #f495c4;
+  --color-cookie-300: #ef6bad;
+  --color-cookie-400: #ec4899;
+  --color-cookie-500: #e7187f;
+  --color-cookie-600: #bd1469;
+  --color-cookie-700: #941052;
+  --color-cookie-800: #6a0b3b;
+  --color-cookie-900: #410724;
+  --color-cookie-950: #17020d;
+}
+
 @import 'tailwindcss';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-logo {
+  font-family: 'Pacifico', cursive;
+}
