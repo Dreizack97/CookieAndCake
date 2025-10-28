@@ -11,6 +11,7 @@
       <nav>
         <div class="mx-auto max-w-7xl px-4 py-4 2xl:px-0">
           <div class="flex items-center justify-between">
+            <!-- Logotipo y Opciones -->
             <div class="flex items-center space-x-8">
               <!-- Logotipo -->
               <div class="shrink-0">
@@ -39,6 +40,98 @@
                   <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">FAQs</a>
                 </li>
               </ul>
+            </div>
+            <!-- Iconos de Funciones -->
+            <div class="flex items-center lg:space-x-2">
+              <!-- Botón Carrito de Compras -->
+              <button type="button" class="text-cookie-600 hover:bg-cookie-200/30 focus:ring-offset-primary-light focus:ring-primary relative rounded-full p-2 focus:ring-2 focus:ring-offset-2 focus:outline-none" data-dropdown-toggle="cart-dropdown">
+                <span class="sr-only">Ver carrito de compras</span>
+                <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <span id="cart-badge" class="bg-cookie-400 absolute top-0 right-0 flex size-4 translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full text-xs text-white">4</span>
+              </button>
+              <!-- Dropdown Carrito de Compras -->
+              <div id="cart-dropdown" class="ring-opacity-5 ring-cookie-400 right-0 mt-2 hidden w-96 origin-top-right rounded-lg bg-white shadow-xl ring-1 focus:outline-none" role="menu">
+                <div class="p-4">
+                  <!-- Header Carrito de Compras -->
+                  <div class="flex items-center justify-between pb-4">
+                    <h3 class="text-md font-medium text-gray-800">Tu carrito de compras</h3>
+                    <span class="text-sm font-medium text-gray-500">4 artículos</span>
+                  </div>
+                  <!-- Productos de Carrito -->
+                  <div class="max-h-72 space-y-4 overflow-y-auto pr-2">
+                    <!-- Producto 1 -->
+                    <div class="flex items-center space-x-4">
+                      <img class="size-12 rounded-md bg-gray-100" src="https://placehold.co/48x48/E2E8F0/4A5568?text=Galleta" alt="Galleta de Ferrero" />
+                      <div class="grow">
+                        <p class="text-sm font-semibold text-gray-800">Galleta New York</p>
+                        <p class="text-xs text-gray-500">Ferrero Rocher</p>
+                      </div>
+                      <div class="text-xs text-gray-600">x2</div>
+                      <p class="w-16 text-right text-sm font-semibold text-gray-800">$120</p>
+                      <button class="text-red-500 hover:text-red-700">
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path clip-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="flex items-center space-x-4">
+                      <img class="size-12 rounded-md bg-gray-100" src="https://placehold.co/48x48/E2E8F0/4A5568?text=Pastel" alt="Pastel Personalizado" />
+                      <div class="grow">
+                        <p class="text-sm font-semibold text-gray-800">Pastel Personalizado</p>
+                        <p class="text-xs text-gray-500">Lilo & Steetch</p>
+                      </div>
+                      <div class="text-xs text-gray-600">x1</div>
+                      <p class="w-16 text-right text-sm font-semibold text-gray-800">$650</p>
+                      <button class="text-red-500 hover:text-red-700">
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path clip-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="flex items-center space-x-4">
+                      <img class="size-12 rounded-md bg-gray-100" src="https://placehold.co/48x48/E2E8F0/4A5568?text=Rol" alt="Rol de Canela" />
+                      <div class="grow">
+                        <p class="text-sm font-semibold text-gray-800">Rol de Canela</p>
+                        <p class="text-xs text-gray-500">Frutos Rojos</p>
+                      </div>
+                      <div class="text-xs text-gray-600">x1</div>
+                      <p class="w-16 text-right text-sm font-semibold text-gray-800">$50</p>
+                      <button class="text-red-500 hover:text-red-700">
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path clip-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="flex items-center space-x-4">
+                      <img class="size-12 rounded-md bg-gray-100" src="https://placehold.co/48x48/E2E8F0/4A5568?text=Galleta" alt="Galleta Decorada" />
+                      <div class="grow">
+                        <p class="text-sm font-semibold text-gray-800">Galleta Decorada</p>
+                        <p class="text-xs text-gray-500">Lilo & Steetch</p>
+                      </div>
+                      <div class="text-xs text-gray-600">x25</div>
+                      <p class="w-16 text-right text-sm font-semibold text-gray-800">$500</p>
+                      <button class="text-red-500 hover:text-red-700">
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path clip-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-4 border-t border-gray-200 pt-4">
+                    <div class="flex items-center justify-between text-lg font-bold text-gray-800">
+                      <span>Total</span>
+                      <span>$1,320</span>
+                    </div>
+                    <button class="bg-cookie-400 hover:bg-cookie-500 mt-4 w-full rounded-lg px-4 py-3 font-bold text-white transition-colors">Ver tu carrito</button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
             </div>
           </div>
         </div>
