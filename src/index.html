@@ -46,7 +46,7 @@
             <!-- Iconos de Funciones -->
             <div class="flex items-center lg:space-x-2">
               <!-- Botón Carrito de Compras -->
-              <button type="button" class="text-cookie-600 hover:bg-cookie-200/30 focus:ring-offset-primary-light focus:ring-primary relative me-3 rounded-full p-2 focus:ring-2 focus:ring-offset-2 focus:outline-none" data-dropdown-toggle="cart-dropdown">
+              <button type="button" class="text-cookie-600 hover:bg-cookie-200/30 focus:ring-offset-cookie-50 focus:ring-cookie-400 relative me-3 rounded-full p-2 focus:ring-2 focus:ring-offset-2 focus:outline-none" data-dropdown-toggle="cart-dropdown">
                 <span class="sr-only">Ver carrito de compras</span>
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -134,7 +134,7 @@
                 </div>
               </div>
               <!-- Botón de Usuario -->
-              <button type="button" class="text-cookie-600 hover:bg-cookie-200/30 focus:ring-offset-primary-light focus:ring-primary rounded-full p-2 focus:ring-2 focus:ring-offset-2 focus:outline-none" data-dropdown-toggle="user-dropdown">
+              <button type="button" class="text-cookie-600 hover:bg-cookie-200/30 focus:ring-offset-cookie-50 focus:ring-cookie-400 rounded-full p-2 focus:ring-2 focus:ring-offset-2 focus:outline-none" data-dropdown-toggle="user-dropdown">
                 <span class="sr-only">Abrir menú de usuario</span>
                 <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
@@ -291,10 +291,61 @@
       </section>
       <!-- Productos Destacados -->
       <section class="py-12 md:py-20">
-        <!-- Header de Sección -->
         <div class="container mx-auto px-4">
+          <!-- Header de Sección -->
           <h2 class="font-logo text-cookie-400 mb-8 text-center text-4xl md:text-5xl">Nuestros Favoritos</h2>
           <p class="mx-auto mb-12 max-w-2xl text-center text-gray-700">Cada uno de nuestros postres es una obra de arte, creada con pasión y los mejores ingredientes. Aquí te presentamos una selección de los más queridos por nuestros clientes.</p>
+          <!-- Grilla de Productos -->
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Producto 1 -->
+            <div class="transform overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:-translate-y-2">
+              <img class="h-56 w-full object-cover" src="./assets/img/Macarons.webp" alt="Caja de macarons de diferentes colores y sabores." />
+              <div class="p-6">
+                <h3 class="font-logo text-cookie-400 text-2xl">Macarons Surtidos</h3>
+                <p class="mt-2 mb-4 text-sm text-gray-700">Una delicada selección de nuestros mejores macarons, crujientes por fuera y suaves por dentro.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-cookie-500 text-xl font-bold">$12.00</span>
+                  <button class="bg-cookie-400 hover:bg-cookie-500 rounded-full px-4 py-2 text-sm font-semibold text-white transition-colors duration-300">Agregar</button>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="transform overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:-translate-y-2">
+              <img class="h-56 w-full object-cover" src="./assets/img/Cheesecake.webp" alt="Rebanada de cheesecake de fresa con crema batida." />
+              <div class="p-6">
+                <h3 class="font-logo text-cookie-400 text-2xl">Cheesecake de Fresa</h3>
+                <p class="mt-2 mb-4 text-sm text-gray-700">Cremoso y suave, con una base de galleta y una generosa capa de mermelada de fresa casera.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-cookie-500 text-xl font-bold">$8.50</span>
+                  <button class="bg-cookie-400 hover:bg-cookie-500 rounded-full px-4 py-2 text-sm font-semibold text-white transition-colors duration-300">Agregar</button>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="transform overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:-translate-y-2">
+              <img class="h-56 w-full object-cover" src="./assets/img/Cupcake.webp" alt="Cupcake de chocolate con betún de vainilla y chispas." />
+              <div class="p-6">
+                <h3 class="font-logo text-cookie-400 text-2xl">Cupcake de Chocolate</h3>
+                <p class="mt-2 mb-4 text-sm text-gray-700">Un clásico irresistible. Bizcocho de chocolate húmedo con un cremoso betún de vainilla.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-cookie-500 text-xl font-bold">$4.75</span>
+                  <button class="bg-cookie-400 hover:bg-cookie-500 rounded-full px-4 py-2 text-sm font-semibold text-white transition-colors duration-300">Agregar</button>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="transform overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:-translate-y-2">
+              <img class="h-56 w-full object-cover" src="./assets/img/Crossaint.webp" alt="Croissant de almendras recién horneado." />
+              <div class="p-6">
+                <h3 class="font-logo text-cookie-400 text-2xl">Croissant de Almendra</h3>
+                <p class="mt-2 mb-4 text-sm text-gray-700">Hojaldrado a la perfección, relleno de crema de almendras y cubierto con almendras fileteadas.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-cookie-500 text-xl font-bold">$5.25</span>
+                  <button class="bg-cookie-400 hover:bg-cookie-500 rounded-full px-4 py-2 text-sm font-semibold text-white transition-colors duration-300">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
