@@ -1,4 +1,14 @@
 {
+  "scripts": {
+    "dev" : "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "clean": "rimraf dist",
+    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
+    "copy:html": "cp ./src/*.html ./dist/",
+    "copy:js": "mkdir -p dist/js && cp -r ./src/js/* ./dist/js/",
+    "copy:vendor": "mkdir -p dist/vendor && cp -r ./src/vendor/* ./dist/vendor/",
+    "copy:assets": "mkdir -p dist/assets && cp -r ./src/assets/* ./dist/assets/",
+    "build": "npm run clean && npm run build:css && npm run copy:html && npm run copy:js && npm run copy:vendor && npm run copy:assets"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.16",
     "prettier-plugin-organize-attributes": "^1.0.0",
