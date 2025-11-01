@@ -17,30 +17,18 @@
             <div class="flex items-center space-x-8">
               <!-- Logotipo -->
               <div class="shrink-0">
-                <a href="#" title="Cookie And Cake">
+                <a href="./index.html" title="Cookie And Cake">
                   <img class="block h-10 w-auto" src="./assets/icons/Isotipo.webp" alt="Isotipo de Cookie And Cake" />
                 </a>
               </div>
               <!-- Navbar Options -->
               <ul class="hidden items-center justify-start gap-6 py-3 sm:justify-center md:gap-8 lg:flex">
-                <li>
-                  <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Inicio</a>
-                </li>
-                <li>
-                  <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Productos</a>
-                </li>
-                <li>
-                  <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Promociones</a>
-                </li>
-                <li>
-                  <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Conócenos</a>
-                </li>
-                <li>
-                  <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Contacto</a>
-                </li>
-                <li>
-                  <a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">FAQs</a>
-                </li>
+                <li><a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="./index.html">Inicio</a></li>
+                <li><a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Productos</a></li>
+                <li><a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Promociones</a></li>
+                <li><a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Conócenos</a></li>
+                <li><a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">Contacto</a></li>
+                <li><a class="hover:bg-cookie-200/30 text-cookie-900 flex rounded-md px-3 py-2 text-sm font-medium" href="#">FAQs</a></li>
               </ul>
             </div>
             <!-- Iconos de Funciones -->
@@ -218,11 +206,30 @@
                   </li>
                 </ul>
               </div>
+              <!-- Botón de Menú Móvil -->
+              <button type="button" class="text-cookie-600 hover:bg-cookie-200/30 focus:ring-offset-cookie-50 focus:ring-cookie-400 ms-3 rounded-full p-2 focus:ring-2 focus:ring-offset-2 focus:outline-none lg:hidden" data-dropdown-toggle="menu-dropdown">
+                <span class="sr-only">Abrir menú</span>
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7h14M5 12h14M5 17h14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+              </button>
             </div>
+          </div>
+          <!-- Dropdown Menú Móvil -->
+          <div id="menu-dropdown" class="border-cookie-200 mt-4 hidden rounded-lg border bg-gray-50 px-4 py-3" data-dropdown="" role="menu">
+            <ul class="text-cookie-900 space-y-3 text-sm font-medium">
+              <li><a class="hover:text-cookie-700" href="./index.html">Inicio</a></li>
+              <li><a class="hover:text-cookie-700" href="#">Productos</a></li>
+              <li><a class="hover:text-cookie-700" href="#">Promociones</a></li>
+              <li><a class="hover:text-cookie-700" href="#">Conócenos</a></li>
+              <li><a class="hover:text-cookie-700" href="#">Contacto</a></li>
+              <li><a class="hover:text-cookie-700" href="#">FAQs</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- === Contenido Principal === -->
     <main>
       <!-- Hero Carousel -->
       <section id="hero-carousel" class="relative w-full">
@@ -421,6 +428,7 @@
         </div>
       </section>
     </main>
+    <!-- === Pie de Página === -->
     <footer class="bg-cookie-700 text-primary-light">
       <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
