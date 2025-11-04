@@ -283,6 +283,57 @@
                   <path d="m19 9-7 7-7-7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                 </svg>
               </button>
+              <!-- Dropdown Filtros -->
+              <div id="filter-dropdown" class="ring-opacity-5 ring-cookie-400 absolute top-0 left-0 mt-2 hidden w-64 origin-top-right rounded-lg bg-white shadow-xl ring-1 focus:outline-none" data-dropdown="" role="menu">
+                <div class="flex flex-col">
+                  <!-- Header -->
+                  <div class="flex items-center justify-between border-b border-gray-200 p-4">
+                    <h3 class="text-base font-semibold text-gray-700">Filtrar por Categoría</h3>
+                  </div>
+                </div>
+                <ul class="flex-1 overflow-y-auto p-2">
+                  <li class="rounded-lg p-2 hover:bg-gray-100">
+                    <label class="flex w-full cursor-pointer items-center justify-between">
+                      <div class="flex items-center space-x-3">
+                        <input type="checkbox" class="text-cookie-600 focus:ring-cookie-500 h-4 w-4 rounded border-gray-300" />
+                        <span class="text-sm font-medium text-gray-500">Cupcakes</span>
+                      </div>
+                      <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">12</span>
+                    </label>
+                  </li>
+                  <li class="rounded-lg p-2 hover:bg-gray-100">
+                    <label class="flex w-full cursor-pointer items-center justify-between">
+                      <div class="flex items-center space-x-3">
+                        <input type="checkbox" class="text-cookie-600 focus:ring-cookie-500 h-4 w-4 rounded border-gray-300" />
+                        <span class="text-sm font-medium text-gray-500">Galletas</span>
+                      </div>
+                      <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">10</span>
+                    </label>
+                  </li>
+                  <li class="rounded-lg p-2 hover:bg-gray-100">
+                    <label class="flex w-full cursor-pointer items-center justify-between">
+                      <div class="flex items-center space-x-3">
+                        <input type="checkbox" class="text-cookie-600 focus:ring-cookie-500 h-4 w-4 rounded border-gray-300" />
+                        <span class="text-sm font-medium text-gray-500">Pasteles</span>
+                      </div>
+                      <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">5</span>
+                    </label>
+                  </li>
+                  <li class="rounded-lg p-2 hover:bg-gray-100">
+                    <label class="flex w-full cursor-pointer items-center justify-between">
+                      <div class="flex items-center space-x-3">
+                        <input type="checkbox" class="text-cookie-600 focus:ring-cookie-500 h-4 w-4 rounded border-gray-300" />
+                        <span class="text-sm font-medium text-gray-500">Roles</span>
+                      </div>
+                      <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">8</span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="flex items-center justify-between space-x-3 rounded-b-xl border-t border-gray-200 bg-gray-50 p-3">
+                  <button type="button" class="focus:ring-cookie-400 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-offset-0 focus:outline-none">Limpiar</button>
+                  <button type="button" class="bg-cookie-700 hover:bg-cookie-800 focus:ring-cookie-600 flex-1 rounded-lg px-4 py-2 text-sm font-semibold text-white shadow-sm focus:ring-2 focus:ring-offset-2 focus:outline-none">Aplicar</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
