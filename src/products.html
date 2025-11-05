@@ -375,6 +375,28 @@
                 <!-- Información de Promoción -->
                 <div class="mb-4 flex items-center justify-between gap-4">
                   <span class="bg-cookie-100 text-cookie-800 me-2 rounded px-2.5 py-0.5 text-xs font-medium">35% de descuento</span>
+                  <!-- Botones de acción -->
+                  <div class="flex items-center justify-end gap-1">
+                    <!-- Botón de Vista Rápida -->
+                    <button type="button" class="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900">
+                      <span class="sr-only">Vista rápida</span>
+                      <svg class="h-5 w-5" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z" stroke="currentColor" stroke-width="2" />
+                        <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="2" />
+                      </svg>
+                    </button>
+                    <!-- Tooltip Vista Rápida -->
+                    <div class="invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300">Vista Rápida</div>
+                    <!-- Botón Agregar a Favoritos -->
+                    <button type="button" class="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900">
+                      <span class="sr-only">Agregar a favoritos</span>
+                      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                      </svg>
+                    </button>
+                    <!-- Tooltip Agregar a Favoritos -->
+                    <div class="invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300">Agregar a favoritos</div>
+                  </div>
                 </div>
               </div>
             </div>
